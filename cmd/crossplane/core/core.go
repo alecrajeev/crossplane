@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 
 	"github.com/crossplane/crossplane/internal/controller/apiextensions"
 	"github.com/crossplane/crossplane/internal/controller/pkg"

@@ -298,13 +298,13 @@ release on their own schedule even when other Stacks or Crossplane itself is not
 ## Package Versioning
 
 Some of the Crossplane source code repositories are expected to be imported as packages only, for
-example [crossplane-runtime](https://github.com/crossplane/crossplane-runtime). This means that
+example [crossplane-runtime](https://github.com/alecrajeev/crossplane-runtime). This means that
 they have no release artifacts that need to be published nor follow all the processes described in
 this document. However, since many repositories depend on this code, it would still be wise to
 specify a versioning strategy that it will follow.
 
 As described in [crossplane-runtime
-#11](https://github.com/crossplane/crossplane-runtime/issues/11), the upstream controller-runtime
+#11](https://github.com/alecrajeev/crossplane-runtime/issues/11), the upstream controller-runtime
 versioning process is reasonable and communicates the compatibility guarantees for each tagged
 version. Full details of this policy can be read in the [controller-runtime versioning
 doc](https://github.com/kubernetes-sigs/controller-runtime/blob/master/VERSIONING.md), but here are

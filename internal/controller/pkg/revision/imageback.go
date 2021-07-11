@@ -28,7 +28,7 @@ import (
 	"github.com/spf13/afero/tarfs"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/crossplane/crossplane-runtime/pkg/parser"
+	"github.com/alecrajeev/crossplane-runtime/pkg/parser"
 
 	v1 "github.com/crossplane/crossplane/apis/pkg/v1"
 	"github.com/crossplane/crossplane/internal/xpkg"

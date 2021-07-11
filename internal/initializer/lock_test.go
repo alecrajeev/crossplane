@@ -24,7 +24,7 @@ import (
 	"github.com/pkg/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 )
 
 func TestLockObject(t *testing.T) {

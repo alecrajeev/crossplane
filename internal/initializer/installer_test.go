@@ -25,7 +25,7 @@ import (
 	kerrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 	v1 "github.com/crossplane/crossplane/apis/pkg/v1"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"

@@ -30,12 +30,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/fake"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/unstructured/claim"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/unstructured/composite"
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	xpv1 "github.com/alecrajeev/crossplane-runtime/apis/common/v1"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/fake"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/unstructured/claim"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/unstructured/composite"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 )
 
 func TestReconcile(t *testing.T) {

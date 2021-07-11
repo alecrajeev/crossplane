@@ -25,7 +25,7 @@ import (
 	rbacv1 "k8s.io/api/rbac/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 )
 
 func TestAllowed(t *testing.T) {

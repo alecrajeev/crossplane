@@ -175,26 +175,26 @@ as an alternative considered.
 
 ### `Release` Controller
 
-We will implement the controller using the [managed reconciler of crossplane runtime](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed).
+We will implement the controller using the [managed reconciler of crossplane runtime](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed).
 
 Following logic will be implemented for corresponding functions:
 
-[Connect](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalConnectorFn.Connect):
+[Connect](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalConnectorFn.Connect):
 
 - Using provided Kubernetes Provider, create a kubernetes client and helm client as `ExternalClient`. 
 
-[Observe](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Observe):
+[Observe](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Observe):
 
 1. Using [history action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/history.go#L43)
 of helm client, get last [release](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/release/release.go#L22)
 information.
-    1. If there is no last release, return [`ExternalObservation`](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalObservation)
+    1. If there is no last release, return [`ExternalObservation`](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalObservation)
     as `ResourceExists = false` which will result in `Create` to be called.
     1. If there is last release, [decide whether desired state matches with observed or not](#triggering-a-helm-upgrade).
         1. If desired state matches with observed, return `ResourceUpToDate = true`
         1. If desired state differs from observed, return `ResourceUpToDate = false`
 
-[Create](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Create):
+[Create](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Create):
 
 1. Pull and load the helm chart using [pull action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/pull.go#L56).
 1. Compose [value overrides](#value-overrides) as desired config.
@@ -202,14 +202,14 @@ information.
 1. Using [install action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/install.go#L150)
 of helm client, `helm install` with the desired config.
 
-[Update](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Update):
+[Update](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Update):
 
 1. Pull and load the helm chart using [pull action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/pull.go#L56).
 1. Prepare desired config by combining `spec.forProvider.values` and `spec.forProvider.set`s
 1. Using [upgrade action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/upgrade.go#L71) of
 helm client, `helm upgrade` with the desired config.
 
-[Delete](https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Delete):
+[Delete](https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalClientFns.Delete):
 
 1. Using [uninstall action](https://github.com/helm/helm/blob/3d64c6bb5495d4e4426c27b181300fff45f95ff0/pkg/action/uninstall.go#L49) of
 helm client, `helm uninstall` the release.

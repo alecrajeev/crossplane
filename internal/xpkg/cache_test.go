@@ -28,7 +28,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/tarball"
 	"github.com/spf13/afero"
 
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 )
 
 func TestGet(t *testing.T) {

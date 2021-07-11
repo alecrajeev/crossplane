@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/parser"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
+	"github.com/alecrajeev/crossplane-runtime/pkg/parser"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
 )
 
 // NewCoreCRDs returns a new *CoreCRDs.

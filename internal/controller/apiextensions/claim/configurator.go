@@ -24,10 +24,10 @@ import (
 	"github.com/pkg/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/meta"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/unstructured/claim"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/unstructured/composite"
+	"github.com/alecrajeev/crossplane-runtime/pkg/meta"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/unstructured/claim"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/unstructured/composite"
 
 	"github.com/crossplane/crossplane/internal/xcrd"
 )

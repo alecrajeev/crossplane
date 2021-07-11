@@ -27,7 +27,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/crossplane/crossplane-runtime/pkg/resource/unstructured/composite"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/unstructured/composite"
 	v1 "github.com/crossplane/crossplane/apis/apiextensions/v1"
 )
 

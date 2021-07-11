@@ -241,7 +241,7 @@ What goes into `Spec`:
   resource-specific defaults. If the provider tags the resource without us
   telling them to do so, controller should update `Spec` and input user should
   make changes on that current value of the field. Related to
-  https://github.com/crossplane/crossplane-runtime/issues/10
+  https://github.com/alecrajeev/crossplane-runtime/issues/10
 
 Note that the controller should make updates only to `Spec` fields that are
 empty. We do not override user's desired state and if they have no control over
@@ -686,5 +686,5 @@ one of the `Condition`s we already have or add a new one.
 
 [package]: https://docs.aws.amazon.com/sdk-for-go/v2/api/service/eks/
 [glossary]: https://github.com/crossplane/crossplane/blob/master/docs/concepts.md#glossary
-[from crossplane-runtime]: https://github.com/crossplane/crossplane-runtime/blob/ca4b6b4/apis/core/v1alpha1/resource.go#L77
+[from crossplane-runtime]: https://github.com/alecrajeev/crossplane-runtime/blob/ca4b6b4/apis/core/v1alpha1/resource.go#L77
 [Kubernetes API Conventions - Spec and Status]: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status

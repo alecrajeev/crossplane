@@ -10,7 +10,7 @@ maintainers:
     email: info@crossplane.io
 source:
 - https://github.com/crossplane/crossplane
-- https://github.com/crossplane/crossplane-runtime
+- https://github.com/alecrajeev/crossplane-runtime
 - https://github.com/crossplane/provider-aws
 - https://github.com/crossplane/provider-azure
 - https://github.com/crossplane/provider-gcp

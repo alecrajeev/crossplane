@@ -30,10 +30,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/crossplane/crossplane-runtime/pkg/event"
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
-	"github.com/crossplane/crossplane-runtime/pkg/meta"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
+	"github.com/alecrajeev/crossplane-runtime/pkg/event"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/meta"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
 	v1 "github.com/crossplane/crossplane/apis/apiextensions/v1"
 )
 

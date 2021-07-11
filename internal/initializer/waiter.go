@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 )
 
 const (

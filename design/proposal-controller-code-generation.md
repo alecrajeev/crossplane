@@ -338,7 +338,7 @@ other supported languages inc javascript, python and .NET.
 [gcp-config-connector]: https://cloud.google.com/config-connector/docs/overview
 [kubeform-terraform-apply]: https://github.com/kubeform/kfc/blob/master/pkg/controllers/terraform.go
 [openapi-generator]: https://github.com/OpenAPITools/openapi-generator 
-[resource.Managed interface]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/resource#Managed
+[resource.Managed interface]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/resource#Managed
 [terraform-alicloud]: https://github.com/terraform-providers/terraform-provider-alicloud
 [terraform-aws]: https://github.com/terraform-providers/terraform-provider-aws
 [terraform-azure]: https://github.com/terraform-providers/terraform-provider-azurerm

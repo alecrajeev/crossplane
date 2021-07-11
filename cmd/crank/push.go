@@ -26,7 +26,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 	"github.com/crossplane/crossplane/internal/xpkg"
 )
 

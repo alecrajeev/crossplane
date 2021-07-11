@@ -188,11 +188,11 @@ implementations.
 [Events]: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#event-v1-core
 [debugging an application cluster]: https://kubernetes.io/docs/tasks/debug-application-cluster/
 [Dave Cheney article]: https://dave.cheney.net/2015/11/05/lets-talk-about-logging
-[`event`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/event
-[`logging`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/logging
+[`event`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/event
+[`logging`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/logging
 [Do]: https://peter.bourgon.org/go-best-practices-2016/#logging-and-instrumentation
 [not]: https://dave.cheney.net/2017/01/23/the-package-level-logger-anti-pattern
 [`Reconciler`]: https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile#Reconciler
-[managed resource reconciler]: https://github.com/crossplane/crossplane-runtime/blob/a6bb0/pkg/reconciler/managed/reconciler.go#L436
+[managed resource reconciler]: https://github.com/alecrajeev/crossplane-runtime/blob/a6bb0/pkg/reconciler/managed/reconciler.go#L436
 [wrapping errors]: https://godoc.org/github.com/pkg/errors#Wrap
 [API conventions]: https://github.com/kubernetes/community/blob/09f55c6/contributors/devel/sig-architecture/api-conventions.md#events

@@ -20,7 +20,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 
-	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
+	xpv1 "github.com/alecrajeev/crossplane-runtime/apis/common/v1"
 )
 
 // PackageRevisionDesiredState is the desired state of the package revision.

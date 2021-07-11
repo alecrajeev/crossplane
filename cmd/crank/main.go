@@ -23,7 +23,7 @@ import (
 	"github.com/spf13/afero"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 	"github.com/crossplane/crossplane/internal/version"
 )
 

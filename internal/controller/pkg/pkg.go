@@ -19,7 +19,7 @@ package pkg
 import (
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 	"github.com/crossplane/crossplane/internal/controller/pkg/manager"
 	"github.com/crossplane/crossplane/internal/controller/pkg/resolver"
 	"github.com/crossplane/crossplane/internal/controller/pkg/revision"

@@ -350,10 +350,10 @@ import (
     // An API client of the hypothetical FavouriteDB service.
     "github.com/fcp-sdk/v1/services/database"
 
-    xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
-    "github.com/crossplane/crossplane-runtime/pkg/meta"
-    "github.com/crossplane/crossplane-runtime/pkg/resource"
-    "github.com/crossplane/crossplane-runtime/pkg/reconciler/managed"
+    xpv1 "github.com/alecrajeev/crossplane-runtime/apis/common/v1"
+    "github.com/alecrajeev/crossplane-runtime/pkg/meta"
+    "github.com/alecrajeev/crossplane-runtime/pkg/resource"
+    "github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed"
 
     "github.com/crossplane/provider-fcp/apis/database/v1alpha3"
     fcpv1alpha3 "github.com/crossplane/provider-fcp/apis/v1alpha3"
@@ -504,7 +504,7 @@ func (e *external) Create(ctx context.Context, mg resource.Managed) (managed.Ext
     // an error if asked to create a resource that already exists. Real managed
     // resource controllers are advised to avoid unintentially 'adoptign' an
     // existing, unrelated external resource, per
-    // https://github.com/crossplane/crossplane-runtime/issues/27
+    // https://github.com/alecrajeev/crossplane-runtime/issues/27
     return managed.ExternalCreation{ConnectionDetails: cd}, errors.Wrap(resource.Ignore(database.IsExists, err), "cannot create instance")
 }
 
@@ -617,7 +617,7 @@ feedback you may have about the development process!
 [`ProviderConfig`]: https://github.com/crossplane/provider-gcp/blob/be5aaf6/apis/v1beta1/providerconfig_types.go#L39
 [watching the API server]: https://kubernetes.io/docs/reference/using-api/api-concepts/#efficient-detection-of-changes
 [controller-runtime]: https://github.com/kubernetes-sigs/controller-runtime
-[crossplane-runtime]: https://github.com/crossplane/crossplane-runtime/
+[crossplane-runtime]: https://github.com/alecrajeev/crossplane-runtime/
 [golden path]: https://charity.wtf/2018/12/02/software-sprawl-the-golden-path-and-scaling-teams-with-agency/
 [API Conventions]: https://github.com/kubernetes/community/blob/c6e1e89a/contributors/devel/sig-architecture/api-conventions.md
 [kubebuilder book]: https://book.kubebuilder.io/
@@ -626,15 +626,15 @@ feedback you may have about the development process!
 [objects]: https://kubernetes.io/docs/concepts/#kubernetes-objects
 [comment marker]: https://kubebuilder.io/reference/markers.html
 [comment markers]: https://kubebuilder.io/reference/markers.html
-[`resource.Managed`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/resource#Managed
-[`managed.Reconciler`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#Reconciler
-[`managed.NewReconciler`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#NewReconciler
-[`managed.ExternalConnecter`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalConnecter
-[`managed.ExternalClient`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalClient
-[`ResourceSpec`]: https://godoc.org/github.com/crossplane/crossplane-runtime/apis/common/v1#ResourceSpec
-[`ResourceStatus`]: https://godoc.org/github.com/crossplane/crossplane-runtime/apis/common/v1#ResourceStatus
-[`ProviderSpec`]: https://godoc.org/github.com/crossplane/crossplane-runtime/apis/common/v1#ProviderSpec
-['managed.ExternalConnecter`]: https://godoc.org/github.com/crossplane/crossplane-runtime/pkg/reconciler/managed#ExternalConnecter
+[`resource.Managed`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/resource#Managed
+[`managed.Reconciler`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#Reconciler
+[`managed.NewReconciler`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#NewReconciler
+[`managed.ExternalConnecter`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalConnecter
+[`managed.ExternalClient`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalClient
+[`ResourceSpec`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/apis/common/v1#ResourceSpec
+[`ResourceStatus`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/apis/common/v1#ResourceStatus
+[`ProviderSpec`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/apis/common/v1#ProviderSpec
+['managed.ExternalConnecter`]: https://godoc.org/github.com/alecrajeev/crossplane-runtime/pkg/reconciler/managed#ExternalConnecter
 [opening a Crossplane issue]: https://github.com/crossplane/crossplane/issues/new/choose
 [`GroupVersionKind`]: https://godoc.org/k8s.io/apimachinery/pkg/runtime/schema#GroupVersionKind
 [`reconcile.Reconciler`]: https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile#Reconciler

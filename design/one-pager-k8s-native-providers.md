@@ -554,9 +554,9 @@ func (c *ClusterController) SetupWithManager(mgr ctrl.Manager) error {
 [Crossplane CLI]: https://github.com/crossplane/crossplane-cli
 [client-go]: https://github.com/kubernetes/client-go
 [managed reconciler]: https://github.com/crossplane/crossplane/blob/14fa6dda6a3e91d5f1ac98d1020a151b02311cb1/pkg/controller/workload/kubernetes/resource/resource.go#L401
-[claim reconciler]: https://github.com/crossplane/crossplane-runtime/blob/master/pkg/resource/claim_reconciler.go
+[claim reconciler]: https://github.com/alecrajeev/crossplane-runtime/blob/master/pkg/resource/claim_reconciler.go
 [scheduler controller]: https://github.com/crossplane/crossplane/blob/master/pkg/controller/workload/kubernetes/scheduler/scheduler.go
-[crossplane-runtime]: https://github.com/crossplane/crossplane-runtime
-[crossplane-runtime #22]: https://github.com/crossplane/crossplane-runtime/issues/22
-[crossplane-runtime #34]: https://github.com/crossplane/crossplane-runtime/issues/34
+[crossplane-runtime]: https://github.com/alecrajeev/crossplane-runtime
+[crossplane-runtime #22]: https://github.com/alecrajeev/crossplane-runtime/issues/22
+[crossplane-runtime #34]: https://github.com/alecrajeev/crossplane-runtime/issues/34
 [crossplane #859]: https://github.com/crossplane/crossplane/issues/859

@@ -317,5 +317,5 @@ labels on the `KubernetesTarget` type.
 [scheduling controller]: https://github.com/crossplane/crossplane/blob/2cab9826a1d5088a87b5d24693336d228279a3a7/pkg/controller/workload/kubernetes/scheduler/scheduler.go#L57
 [remote cluster connection information]: https://github.com/crossplane/crossplane/blob/2cab9826a1d5088a87b5d24693336d228279a3a7/pkg/controller/workload/kubernetes/resource/resource.go#L401
 [predicates]: https://godoc.org/sigs.k8s.io/controller-runtime/pkg/predicate
-[crossplane-runtime]: https://github.com/crossplane/crossplane-runtime
+[crossplane-runtime]: https://github.com/alecrajeev/crossplane-runtime
 [garbage collection]: https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/

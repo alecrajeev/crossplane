@@ -28,8 +28,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane/crossplane-runtime/pkg/meta"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
+	"github.com/alecrajeev/crossplane-runtime/pkg/meta"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
 )
 
 // Error strings.

@@ -103,12 +103,12 @@ Any dates listed below and the specific issues that will ship in a given milesto
 ### v1.1.0 Composition enhancements, provider code gen, security, and rate limiting
 
 * General
-  * Support Fs and Env ProviderConfig credential sources [crossplane-runtime#236](https://github.com/crossplane/crossplane-runtime/issues/236), [#2070](https://github.com/crossplane/crossplane/issues/2070) 
+  * Support Fs and Env ProviderConfig credential sources [crossplane-runtime#236](https://github.com/alecrajeev/crossplane-runtime/issues/236), [#2070](https://github.com/crossplane/crossplane/issues/2070) 
     * AWS [provider-aws#518](https://github.com/crossplane/provider-aws/pull/518)
     * Azure [provider-azure#218](https://github.com/crossplane/provider-azure/pull/218)
     * GCP [provider-gcp#301](https://github.com/crossplane/provider-gcp/pull/301)
   * [Guide for using Vault for Provider credentials](https://crossplane.io/docs/master/guides/vault-injection.html)
-  * Rate limiting support in the `ManagedReconciler` [#40](https://github.com/crossplane/crossplane-runtime/issues/40) - see related [blog post](https://danielmangum.com/posts/controller-runtime-client-go-rate-limiting/)
+  * Rate limiting support in the `ManagedReconciler` [#40](https://github.com/alecrajeev/crossplane-runtime/issues/40) - see related [blog post](https://danielmangum.com/posts/controller-runtime-client-go-rate-limiting/)
 
 * Composition
   * Bi-directional patching for status [#1639](https://github.com/crossplane/crossplane/issues/1639)
@@ -319,7 +319,7 @@ Any dates listed below and the specific issues that will ship in a given milesto
 
 * Backup/restore compatibility with tools like Velero
   * Allow a KubernetesApplication to be backed up and restored [crossplane#1382](https://github.com/crossplane/crossplane/issues/1382)
-  * Allow connection secrets to be backed up and restored [crossplane-runtime#140](https://github.com/crossplane/crossplane-runtime/issues/140)
+  * Allow connection secrets to be backed up and restored [crossplane-runtime#140](https://github.com/alecrajeev/crossplane-runtime/issues/140)
   * Support backup and restore of all GCP managed resources [provider-gcp#207](https://github.com/crossplane/provider-gcp/issues/207)
   * Support backup and restore of all Azure managed resources [provider-azure#128](https://github.com/crossplane/provider-azure/issues/128)
   * Support backup and restore of all AWS managed resources [provider-aws#181](https://github.com/crossplane/provider-aws/issues/181)
@@ -380,7 +380,7 @@ Any dates listed below and the specific issues that will ship in a given milesto
   * thanks first-time contributor @vasartori! [#1245](https://github.com/crossplane/crossplane/pull/1245)
 * Improved logging and eventing 
   * [Observability Developer Guide](https://crossplane.io/docs/v0.8/observability-developer-guide.html) for logging and eventing in Crossplane controllers
-  * [crossplane/crossplane-runtime#104](https://github.com/crossplane/crossplane-runtime/issues/104) instrumentation and updated all cloud provider stacks
+  * [crossplane/crossplane-runtime#104](https://github.com/alecrajeev/crossplane-runtime/issues/104) instrumentation and updated all cloud provider stacks
 * Enable [provider-aws](https://github.com/crossplane/provider-aws) to authenticate to the AWS API using [IAM Roles for Service Accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
   * when running on EKS [provider-aws#126](https://github.com/crossplane/provider-aws/pull/126)
 * Host-aware Stack Manager [#1038](https://github.com/crossplane/crossplane/issues/1038)
@@ -453,7 +453,7 @@ Any dates listed below and the specific issues that will ship in a given milesto
 * Release automation for shorter release cycles and hot fixes [#864](https://github.com/crossplane/crossplane/issues/864) 
   * Updating pipelines to include automation [#6](https://github.com/crossplane/crossplane/issues/6)
   * SonarCloud checks for cloud provider stacks [#875](https://github.com/crossplane/crossplane/issues/875)
-  * crossplane-runtime build pipelines [crossplane/crossplane-runtime#14](https://github.com/crossplane/crossplane-runtime/issues/14)
+  * crossplane-runtime build pipelines [crossplane/crossplane-runtime#14](https://github.com/alecrajeev/crossplane-runtime/issues/14)
 
 * Trace utility for enhanced debugging support. [#744](https://github.com/crossplane/crossplane/issues/744)
 

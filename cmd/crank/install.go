@@ -33,8 +33,8 @@ import (
 	"k8s.io/client-go/tools/cache"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	xpv1 "github.com/alecrajeev/crossplane-runtime/apis/common/v1"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 	v1 "github.com/crossplane/crossplane/apis/pkg/v1"
 	typedclient "github.com/crossplane/crossplane/internal/client/clientset/versioned/typed/pkg/v1"
 	"github.com/crossplane/crossplane/internal/version"

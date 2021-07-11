@@ -26,9 +26,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 
-	"github.com/crossplane/crossplane-runtime/pkg/fieldpath"
-	"github.com/crossplane/crossplane-runtime/pkg/resource/fake"
-	"github.com/crossplane/crossplane-runtime/pkg/test"
+	"github.com/alecrajeev/crossplane-runtime/pkg/fieldpath"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource/fake"
+	"github.com/alecrajeev/crossplane-runtime/pkg/test"
 )
 
 func TestPatchTypeReplacement(t *testing.T) {

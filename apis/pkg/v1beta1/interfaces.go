@@ -20,8 +20,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
-	"github.com/crossplane/crossplane-runtime/pkg/resource"
+	xpv1 "github.com/alecrajeev/crossplane-runtime/apis/common/v1"
+	"github.com/alecrajeev/crossplane-runtime/pkg/resource"
 )
 
 // RevisionActivationPolicy indicates how a package should activate its

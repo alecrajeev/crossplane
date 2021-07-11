@@ -19,7 +19,7 @@ package rbac
 import (
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/crossplane/crossplane-runtime/pkg/logging"
+	"github.com/alecrajeev/crossplane-runtime/pkg/logging"
 
 	"github.com/crossplane/crossplane/internal/controller/rbac/definition"
 	"github.com/crossplane/crossplane/internal/controller/rbac/namespace"

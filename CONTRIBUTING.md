@@ -155,6 +155,6 @@ us][Slack] if you have any questions about contributing!
 [Developer Certificate of Origin]: https://github.com/apps/dco
 [code review comments]: https://github.com/golang/go/wiki/CodeReviewComments
 [test review comments]: https://github.com/golang/go/wiki/TestComments
-[crossplane-runtime]: https://github.com/crossplane/crossplane-runtime
+[crossplane-runtime]: https://github.com/alecrajeev/crossplane-runtime
 [docs]: docs/
 [examples]: examples/
